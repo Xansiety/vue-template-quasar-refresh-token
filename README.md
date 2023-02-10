@@ -1,18 +1,102 @@
-# Vue 3 + TypeScript + Vite
+# Boilerplate Vue 3 + TS + Quasar Plugin + Vite + Vue Router + Pinia + Axios
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+This project is to quickly create an initial project structure with guard-protected routes.
 
-## Recommended IDE Setup
+It implements the use of refresh token.
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## Technologies used
 
-## Type Support For `.vue` Imports in TS
+This project was created with the following technologies:
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+Please, if you want more information about the technologies used, visit the documentation of each one.
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+- [Vue 3](https://vuejs.org)
+- [Vite](https://vitejs.dev)
+- [Quasar](https://quasar.dev)
+- [Vue Router](https://router.vuejs.org)
+- [Pinia](https://pinia.vuejs.org)
+- [Typescript](https://www.typescriptlang.org)
+- [Axios](https://axios-http.com)
 
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+*** 
+
+  ... MORE COMING SOON 😍 !!
+
+Yu can use this project as a base for your project, just clone it and start coding.
+
+It hopes to help you in your projects.
+
+I want tell you that this project is not finished yet, I will be adding more features and improvements.
+
+# Features
+
+- [x] Login
+- [] Register
+- [] Forgot Password
+- [] Reset Password
+- [] Profile
+- [x] Home Page
+- [x] Guard Protected Routes
+- [x] Refresh Token
+- [x] Logout
+- [] Change Language 
+- [x] Change light/dark theme
+- [] Api calls with axios
+
+> Please, if you want to contribute to this project, you can do it by adding new features or improving the existing ones. send me a pull request and I promise check with you.
+
+# Acknowledgments
+
+And many thanks to all the people in the next list, who have contributed to the development of this project.
+
+Thanks to the [Vue 3](https://vuejs.org) team for the great work they do.
+Thanks to the [Vite](https://vitejs.dev) team for the great work they do.
+Thanks to the [Vue Router](https://router.vuejs.org) team for the great work they do.
+Thanks to the [Pinia](https://pinia.vuejs.org) team for the great work they do.
+Thanks to the [Quasar](https://quasar.dev) team for the great work they do.
+thanks to the [Typescript](https://www.typescriptlang.org) team for the great work they do.
+Thanks to the [Axios](https://axios-http.com) team for the great work they do.
+
+and special thanks to  [@bluuweb](https://github.com/bluuweb)  for the great inspiration he gives me with his videos, [@Klerith](https://github.com/Klerith) for the great inspiration he gives me with his videos.
+
+
+# How to use
+
+### Clone the repository
+```bash
+git clone [URL OF THE REPOSITORY]
+```
+
+### Go to the project folder
+```bash
+cd [PATH OF THE PROJECT]
+```
+
+### Install the dependencies
+```bash
+npm install or yarn
+```
+or 
+```bash
+yarn
+```
+
+### Execute the project
+```bash
+npm run dev
+```
+or 
+```bash
+yarn dev
+```
+
+### Enjoy it! 🚀
+Put on some music, put the cell phone away for a moment and come on, you have a project to deliver or create a hobby project!
+ 
+
+
+## License
+
+I don´t have any licence of any technology used in this project, so I don´t know if I can use a licence in this project, but I don't care.. I only want to help people with this project, so you can use it as you want, but I would appreciate mention all creator/community of technologies used in this project in your project.
+ 
+# Made with ❤️ by [Xansiety](https://github.com/Xansiety) 
