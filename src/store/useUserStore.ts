@@ -15,7 +15,7 @@ export const useUserStore = defineStore('user', () => {
             rol
         } 
         userToken.value = accessToken 
-        localStorage.setItem("user", AuthorizeStatus.authorize) 
+        sessionStorage.setItem("user", AuthorizeStatus.authorize) 
         setTimeRefresh();
     } 
  
@@ -53,7 +53,7 @@ export const useUserStore = defineStore('user', () => {
             accessToken: 'TokenSuperSeguroRefresh'
         } as Usuario )
     } catch (error) {
-        localStorage.removeItem("user")
+        sessionStorage.removeItem("user")
         console.error(error);
     }
    }
@@ -61,7 +61,7 @@ export const useUserStore = defineStore('user', () => {
    const logoutUser = () => { 
      userData.value = null; 
      userToken.value = undefined;
-     localStorage.removeItem("user")
+     sessionStorage.removeItem("user")
      router.push({ name: 'login'})
    }  
     return { 

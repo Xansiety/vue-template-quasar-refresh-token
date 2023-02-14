@@ -12,7 +12,7 @@ const router = createRouter({
 
 router.beforeEach(async (to, from, next) => {
     // estatus del usuario
-    const isAuthenticated = localStorage.getItem("user") === AuthorizeStatus.authorize;    
+    const isAuthenticated = sessionStorage.getItem("user") === AuthorizeStatus.authorize;    
     // si la ruta requiere estar autenticado para visualizarla
     const requiredAuth = to.meta.requiresAuth;
     //User store para obtener el token
