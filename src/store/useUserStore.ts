@@ -1,7 +1,8 @@
-import { defineStore } from 'pinia'
 import {  ref } from 'vue';
-import { Usuario, Credentials , AuthorizeStatus } from '../auth/interfaces'; 
+import { defineStore } from 'pinia'
+import { useTimeoutFn } from '@vueuse/core'
 import router from '../router/index';
+import { Usuario, Credentials , AuthorizeStatus } from '../auth/interfaces'; 
   
 export const useUserStore = defineStore('user', () => {
     
@@ -37,11 +38,11 @@ export const useUserStore = defineStore('user', () => {
         }
    }
 
-   const setTimeRefresh = () => {
-        setTimeout(() => {
-        console.log("Se solicita automático refresh");
-        refreshToken()
-        }, 40000)
+   const setTimeRefresh = () => { 
+        const { isPending, start, stop} = useTimeoutFn(() => {
+            console.log("Se solicita automático refresh");
+            refreshToken()
+        }, 9000)
     }
  
    const refreshToken = async () => {
