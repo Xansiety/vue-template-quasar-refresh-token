@@ -17,6 +17,7 @@ Please, if you want more information about the technologies used, visit the docu
 - [Pinia](https://pinia.vuejs.org)
 - [Typescript](https://www.typescriptlang.org)
 - [Axios](https://axios-http.com)
+- [VueUse](https://vueuse.org/)
 
 *** 
 
@@ -49,13 +50,14 @@ I want tell you that this project is not finished yet, I will be adding more fea
 
 And many thanks to all the people in the next list, who have contributed to the development of this project.
 
-Thanks to the [Vue 3](https://vuejs.org) team for the great work they do.
-Thanks to the [Vite](https://vitejs.dev) team for the great work they do.
-Thanks to the [Vue Router](https://router.vuejs.org) team for the great work they do.
-Thanks to the [Pinia](https://pinia.vuejs.org) team for the great work they do.
-Thanks to the [Quasar](https://quasar.dev) team for the great work they do.
-thanks to the [Typescript](https://www.typescriptlang.org) team for the great work they do.
-Thanks to the [Axios](https://axios-http.com) team for the great work they do.
+- Thanks to the [Vue 3](https://vuejs.org) team for the great work they do.
+- Thanks to the [Vite](https://vitejs.dev) team for the great work they do.
+- Thanks to the [Vue Router](https://router.vuejs.org) team for the great work they do.
+- Thanks to the [Pinia](https://pinia.vuejs.org) team for the great work they do.
+- Thanks to the [Quasar](https://quasar.dev) team for the great work they do.
+- Thanks to the [Typescript](https://www.typescriptlang.org) team for the great work they do.
+- Thanks to the [Axios](https://axios-http.com) team for the great work they do.
+- Thanks to the [VueUse](https://vueuse.org/) team for the great work they do.
 
 and special thanks to  [@bluuweb](https://github.com/bluuweb)  for the great inspiration he gives me with his videos, [@Klerith](https://github.com/Klerith) for the great inspiration he gives me with his videos.
 
