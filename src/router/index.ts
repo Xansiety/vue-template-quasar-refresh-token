@@ -2,13 +2,17 @@ import { createRouter, createWebHistory } from "vue-router"
 import { routes } from "./routes"
 import { AuthorizeStatus } from "../auth/interfaces";
 import { useUserStore } from "../store/useUserStore";
+import { IsDevMode, VITE_PATH_BUILD } from "../config/environment";
+
+
+const buildPath: string = IsDevMode ? "/" : VITE_PATH_BUILD;
 
 const router = createRouter({
-    history: createWebHistory(import.meta.env.BASE_URL),
-    linkActiveClass: "active",
-    linkExactActiveClass: "exact-active",
-    routes,
-})
+  history: createWebHistory(buildPath),
+  linkActiveClass: "active",
+  linkExactActiveClass: "exact-active",
+  routes,
+});
 
 router.beforeEach(async (to, from, next) => {
     // estatus del usuario
