@@ -51,6 +51,7 @@ export const useUserStore = defineStore("user", () => {
     } catch (error) {
       sessionStorage.removeItem("user");
       console.error(error);
+      logoutUser();
       stop();
     }
   };

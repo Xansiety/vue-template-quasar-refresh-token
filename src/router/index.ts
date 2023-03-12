@@ -34,7 +34,7 @@ router.beforeEach(async (to, from, next) => {
           { requiredAuth, isAuthenticated, token: userStore.userToken }
         );
         await userStore.refreshToken(); // llamamos nuevamente al refresh
-        if (userStore.userToken !== undefined) {
+        if (userStore.userToken !== undefined && isAuthenticated && requiredAuth) {
             //el usuario se coloco correctamente en el store
           console.log('se obtuvo un usuario y refresh valido', { refreshJWT:  userStore.userToken })
           return next();
