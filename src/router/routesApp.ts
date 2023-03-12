@@ -1,9 +1,8 @@
 import { RouteRecordRaw } from 'vue-router';
 import authRouter from '../auth/router'
-import privateRouter from '../private-module/router';
-// import { requiereAuthGuard } from './GuardsAuth';
+import privateRouter from '../private-module/router'; 
 
-export const routes: RouteRecordRaw[] = [
+export const routesApp: RouteRecordRaw[] = [
   {
     path: "/auth",
     ...authRouter,

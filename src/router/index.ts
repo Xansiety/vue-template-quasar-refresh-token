@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router"
-import { routes } from "./routes"
+import { routesApp } from "./routesApp";
 import { AuthorizeStatus } from "../auth/interfaces";
 import { useUserStore } from "../store/useUserStore";
 import { IsDevMode, VITE_PATH_BUILD } from "../config/environment";
@@ -11,7 +11,7 @@ const router = createRouter({
   history: createWebHistory(buildPath),
   linkActiveClass: "active",
   linkExactActiveClass: "exact-active",
-  routes,
+  routes: routesApp,
 });
 
 router.beforeEach(async (to, from, next) => {
@@ -29,11 +29,14 @@ router.beforeEach(async (to, from, next) => {
      }
      // si no existe el token (se refrescó el sitio web), y esta autenticado el usuario
      else if ( requiredAuth && isAuthenticated  && userStore.userToken === undefined) {
-        console.log("Se recargo sitio -> No existe token pero esta autenticado el usuario :: onRefreshToken ⚡", { isAuthenticated })
-        await userStore.refreshToken();
-        if (userStore.userToken) {
+        console.log(
+          "Se recargo sitio -> No existe token pero esta autenticado el usuario :: onRefreshToken ⚡",
+          { requiredAuth, isAuthenticated, token: userStore.userToken }
+        );
+        await userStore.refreshToken(); // llamamos nuevamente al refresh
+        if (userStore.userToken !== undefined) {
             //el usuario se coloco correctamente en el store
-          console.info('se obtuvo un usuario y refresh valido', { refreshJWT:  userStore.userToken })
+          console.log('se obtuvo un usuario y refresh valido', { refreshJWT:  userStore.userToken })
           return next();
         }
         //ocurrió un error y no se pudo colocar el usuario en el store
