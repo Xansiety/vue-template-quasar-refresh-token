@@ -14,8 +14,7 @@ export const useUserStore = defineStore("user", () => {
     refreshToken();
   }, 9000);
 
-  const setCurrentUserData = ({ usuario, rol, accessToken }: Usuario) => {
-    console.log('Se setea el usuario en el store', {usuario, rol, accessToken})
+  const setCurrentUserData = ({ usuario, rol, accessToken }: Usuario) => { 
     userData.value = {
       usuario,
       rol,

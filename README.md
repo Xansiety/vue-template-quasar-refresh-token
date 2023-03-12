@@ -99,6 +99,6 @@ Put on some music, put the cell phone away for a moment and come on, you have a 
 
 ## License
 
-I don´t have any licence of any technology used in this project, so I don´t know if I can use a licence in this project, but I don't care.. I only want to help people with this project, so you can use it as you want, but I would appreciate mention all creator/community of technologies used in this project in your project.
+I don´t have any license of any technology used in this project, so I don´t know if I can use a license in this project, but I don't care.. I only want to help people with this project, so you can use it as you want, but I would appreciate mention all creator/community of technologies used in this project in your project.
  
 # Made with ❤️ by [Xansiety](https://github.com/Xansiety) 
