@@ -21,7 +21,7 @@ router.beforeEach(async (to, from, next) => {
     const requiredAuth = to.meta.requiresAuth;
     //User store para obtener el token
     const userStore = useUserStore();
-    console.log({requiredAuth, isAuthenticated, token: userStore.userToken});
+    console.log("Initial:", {requiredAuth, isAuthenticated, token: userStore.userToken});
      // si existe el token en memoria y esta autenticado el usuario
      if (requiredAuth && userStore.userToken !== undefined) {
         console.log("existe token y requiere autentificación", { JWT:  userStore.userToken })
